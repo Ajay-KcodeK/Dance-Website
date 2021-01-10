@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+      include ../static/style.css
+
+block content
+  section#introSection
+          div.big Welcome to Ajay's Dance Academy
+          div.small Eat Sleep Dance Repeat
+
+  section#missonSection
+           h2 Our Misson 
+           div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img  
+                        img(src="/static/card1.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolorum cum atque maiores porro sint.
+           div.card
+                h3 Dance as you Like
+                div.card-box
+                    div.card-img  
+                        img(src="/static/card2.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolorum cum atque maiores 
+           div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img  
+                        img(src="/static/card3.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolorum cum atque maiores porro sint?
+
+  section#sponsorSection
+           h2 Our Sponsor  
+           div#sponsor
+               img(src="/static/logo1.jpg" alt="Sponsor Img" class="spImage")
+               img(src="/static/logo2.jpg" alt="Sponsor Img" class="spImage")
+               img(src="/static/logo3.jpg" alt="Sponsor Img" class="spImage")
+               img(src="/static/logo4.jpg" alt="Sponsor Img" class="spImage")
+
+
+  footer#footer
+        | Copyright © 2020 AjayDanceAcademy.com | All right reserved 
